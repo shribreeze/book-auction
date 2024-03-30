@@ -3,55 +3,68 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
+  padding: 4rem;
   min-height: 100vh;
+  background-image: url(/bg2.jpg);
 }
 
 .description {
-  display: inherit;
+  /* display: inherit;
   justify-content: inherit;
-  align-items: inherit;
-  font-size: 0.85rem;
-  max-width: var(--max-width);
+  align-items: inherit; */
+  font-size: 4rem;
+  max-width: 1100px;
   width: 100%;
   z-index: 2;
-  font-family: var(--font-mono);
+  font-family: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+  "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+  "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+  /* background-color: black; */
 }
 
-.description a {
+/* .description a {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
-}
+} */
 
 .description p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   margin: 0;
   padding: 1rem;
-  background-color: rgba(var(--callout-rgb), 0.5);
-  border: 1px solid rgba(var(--callout-border-rgb), 0.3);
-  border-radius: var(--border-radius);
+  background-color: rgba(238, 240, 241, 0.5);
+  border: 1px solid rgb(10, 1, 128);
+  border-radius: 12px;
 }
 
-.code {
+/* .code {
   font-weight: 700;
   font-family: var(--font-mono);
-}
+} */
 
 .grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(25%, auto));
   max-width: 100%;
-  width: var(--max-width);
+  width: 1100px;
+  padding: 1rem;
+  background-color: rgba(238, 240, 241, 0.5);
+  border: 1px solid rgba(14, 0, 140, 0.5);
+  border-radius: 12px;
 }
 
 .card {
   padding: 1rem 1.2rem;
-  border-radius: var(--border-radius);
-  background: rgba(var(--card-rgb), 0);
-  border: 1px solid rgba(var(--card-border-rgb), 0);
+  margin: 10px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 2px solid rgba(200, 200, 200, 1);
   transition: background 200ms, border 200ms;
+  cursor: pointer;
 }
 
 .card span {
@@ -111,8 +124,8 @@
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
-    background: rgba(var(--card-rgb), 0.1);
-    border: 1px solid rgba(var(--card-border-rgb), 0.15);
+    background: rgba(255, 253, 253, 0.518);
+    border: 1px solid rgba(2, 2, 119, 1);
   }
 
   .card:hover span {
